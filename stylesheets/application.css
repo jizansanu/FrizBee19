@@ -1,0 +1,2761 @@
+/* line 4, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, _reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 27, _reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, _reset.scss */
+body {
+  line-height: 1; }
+
+/* line 35, _reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 39, _reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 43, _reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 48, _reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Colours */
+/* Mixins */
+/* line 1, _globals.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, _globals.scss */
+body,
+html {
+  height: 100%; }
+
+/* line 10, _globals.scss */
+body {
+  padding: 0;
+  background-color: #071426;
+  background-image: url("../images/bg-main.jpg"), url("../images/bg-water-colour.jpg");
+  background-position: center top, center 1000px;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+  font-size: 19px;
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+  line-height: 170%; }
+  @media screen and (max-width: 768px) {
+    /* line 10, _globals.scss */
+    body {
+      font-size: 17px;
+      -webkit-text-size-adjust: none; } }
+
+/* line 28, _globals.scss */
+.wrapper {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, ../../../../.rvm/gems/ruby-2.3.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 31, _globals.scss */
+  .wrapper .inner {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .wrapper .inner:last-child {
+      margin-right: 0; }
+
+/* line 37, _globals.scss */
+#main .wrapper .inner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  #main .wrapper .inner:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 37, _globals.scss */
+    #main .wrapper .inner {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      #main .wrapper .inner:last-child {
+        margin-right: 0; } }
+
+/* line 47, _globals.scss */
+#page {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 374px; }
+  @media screen and (max-width: 1024px) {
+    /* line 47, _globals.scss */
+    #page {
+      padding-bottom: 474px; } }
+
+/* line 57, _globals.scss */
+h2 {
+  display: block;
+  margin: 0;
+  padding: 60px 0 40px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 60px;
+  font-style: italic;
+  font-family: "freight-display-pro", Georgia, serif;
+  line-height: 100%;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 768px) {
+    /* line 57, _globals.scss */
+    h2 {
+      font-size: 50px;
+      padding: 30px 0; } }
+  /* line 74, _globals.scss */
+  h2 span {
+    position: relative;
+    padding-right: 44px; }
+    /* line 78, _globals.scss */
+    h2 span:after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 34px;
+      margin: 0;
+      right: 0;
+      bottom: 20px;
+      border-bottom: 3px solid #e75a2f; }
+  @media screen and (max-width: 480px) {
+    /* line 57, _globals.scss */
+    h2 {
+      font-size: 36px; } }
+
+/* line 95, _globals.scss */
+h3 {
+  padding: .8em 0 .6em;
+  color: #fff;
+  line-height: 120%;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "freight-display-pro", Georgia, serif;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 768px) {
+    /* line 95, _globals.scss */
+    h3 {
+      font-size: 34px; } }
+  @media screen and (max-width: 480px) {
+    /* line 95, _globals.scss */
+    h3 {
+      font-size: 30px; } }
+
+/* line 114, _globals.scss */
+h4 {
+  padding: .8em 0 .6em;
+  color: #fff;
+  line-height: 120%;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "freight-display-pro", Georgia, serif;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 768px) {
+    /* line 114, _globals.scss */
+    h4 {
+      font-size: 22px; } }
+  @media screen and (max-width: 480px) {
+    /* line 114, _globals.scss */
+    h4 {
+      font-size: 18px; } }
+
+/* line 133, _globals.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
+  font-weight: 400; }
+  /* line 139, _globals.scss */
+  a:hover, a:focus {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 0 #e75a2f; }
+
+/* line 145, _globals.scss */
+p {
+  margin: 0 0 1em; }
+
+/* line 149, _globals.scss */
+em {
+  font-style: italic; }
+
+/* line 153, _globals.scss */
+strong {
+  font-weight: 600; }
+
+/* line 157, _globals.scss */
+strong.alert {
+  color: #e75a2f; }
+
+/* line 161, _globals.scss */
+.center {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  text-align: center;
+  margin-bottom: 60px; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .center:last-child {
+    margin-right: 0; }
+
+/* line 168, _globals.scss */
+.caption {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 170%;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 480px) {
+    /* line 168, _globals.scss */
+    .caption {
+      display: none; } }
+
+/* line 183, _globals.scss */
+.hero-stamp {
+  display: block;
+  position: relative;
+  width: 372px;
+  margin: 0 auto 80px;
+  border: 3px solid #4e5c6b;
+  color: #fff;
+  text-align: center; }
+  /* line 192, _globals.scss */
+  body.code-of-conduct .hero-stamp, body.call-for-proposals .hero-stamp {
+    margin-top: 40px; }
+  @media screen and (max-width: 768px) {
+    /* line 183, _globals.scss */
+    .hero-stamp {
+      margin: 20px auto;
+      width: 242px;
+      padding-right: 0; } }
+  /* line 203, _globals.scss */
+  .hero-stamp h1 {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 3px solid #4e5c6b;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: .3em; }
+    @media screen and (max-width: 768px) {
+      /* line 203, _globals.scss */
+      .hero-stamp h1 {
+        font-size: 15px;
+        padding: 10px 0; } }
+  /* line 218, _globals.scss */
+  .hero-stamp p {
+    margin: 0;
+    padding: 8px 10px 12px;
+    font-size: 24px;
+    font-family: "freight-text-pro", Georgia, serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-font-smoothing: antialiased; }
+    @media screen and (max-width: 768px) {
+      /* line 218, _globals.scss */
+      .hero-stamp p {
+        font-size: 17px;
+        padding: 4px 0 6px; } }
+  /* line 234, _globals.scss */
+  .hero-stamp .cfp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 124px;
+    border: 3px solid #4e5c6b;
+    border-width: 0 0 0 3px; }
+    @media screen and (max-width: 768px) {
+      /* line 234, _globals.scss */
+      .hero-stamp .cfp {
+        position: relative;
+        width: 100%;
+        border-width: 3px 0 0 0; } }
+    /* line 249, _globals.scss */
+    .hero-stamp .cfp a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: none;
+      background: #bc4123 url("../images/fancy-arrow%402x.png") center 95px no-repeat;
+      background-size: 82px 14px; }
+      /* line 260, _globals.scss */
+      .hero-stamp .cfp a:hover {
+        background-color: #d64a28; }
+      @media screen and (max-width: 768px) {
+        /* line 249, _globals.scss */
+        .hero-stamp .cfp a {
+          position: relative; } }
+  /* line 270, _globals.scss */
+  .hero-stamp small {
+    display: block;
+    padding: 16px 10px 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-font-smoothing: antialiased; }
+    @media screen and (max-width: 768px) {
+      /* line 270, _globals.scss */
+      .hero-stamp small {
+        padding: 10px 10px 10px 20px;
+        width: 124px; } }
+  /* line 287, _globals.scss */
+  .hero-stamp strong {
+    margin-left: -4px;
+    font-weight: 900;
+    font-family: "freight-display-pro", Georgia, serif;
+    font-style: italic;
+    font-size: 38px;
+    -webkit-font-smoothing: antialiased; }
+    @media screen and (max-width: 768px) {
+      /* line 287, _globals.scss */
+      .hero-stamp strong {
+        position: absolute;
+        right: 34px;
+        top: 10px;
+        font-size: 30px; } }
+
+/* line 304, _globals.scss */
+.btn {
+  display: block;
+  width: 300px;
+  padding: 15px 30px;
+  border: 2px solid #e35a17;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px; }
+  /* line 315, _globals.scss */
+  .btn:hover {
+    color: #12142a;
+    border-color: #12142a; }
+  @media screen and (max-width: 480px) {
+    /* line 304, _globals.scss */
+    .btn {
+      width: 260px; } }
+
+/* line 327, _globals.scss */
+.register-now a {
+  position: relative;
+  padding: 12px 60px 12px 16px;
+  background: #bc4123;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased; }
+  /* line 340, _globals.scss */
+  .register-now a:hover {
+    background: #d64a28; }
+    /* line 343, _globals.scss */
+    .register-now a:hover span {
+      border: none; }
+  /* line 348, _globals.scss */
+  .register-now a:before {
+    position: absolute;
+    display: block;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 3px 3px 0; }
+  /* line 360, _globals.scss */
+  .register-now a:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 44px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: url("../images/arrow-up.svg") center center no-repeat;
+    background-size: 18px 18px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
+/* line 374, _globals.scss */
+.register-now.large {
+  margin: 30px 0;
+  text-align: center; }
+  /* line 378, _globals.scss */
+  .register-now.large a {
+    padding: 16px 84px 16px 30px; }
+    /* line 381, _globals.scss */
+    .register-now.large a:before, .register-now.large a:after {
+      width: 54px; }
+
+/* line 389, _globals.scss */
+iframe {
+  margin-top: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9); }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@media screen and (max-width: 1024px) {
+  /* line 5, _top.scss */
+  #header .wrapper .inner {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    #header .wrapper .inner:last-child {
+      margin-right: 0; } }
+/* line 11, _top.scss */
+#header .logo {
+  float: left; }
+  @media screen and (max-width: 1024px) {
+    /* line 11, _top.scss */
+    #header .logo {
+      margin-left: 40px; } }
+  @media screen and (max-width: 768px) {
+    /* line 11, _top.scss */
+    #header .logo {
+      float: none;
+      display: block; }
+      /* line 22, _top.scss */
+      #header .logo a {
+        display: block; }
+        /* line 25, _top.scss */
+        #header .logo a img {
+          display: block;
+          margin: 30px auto 0; } }
+  /* line 32, _top.scss */
+  #header .logo img {
+    width: 72px;
+    height: auto;
+    margin-top: 40px; }
+  /* line 38, _top.scss */
+  #header .logo a {
+    box-shadow: none;
+    background: none; }
+
+/* line 3, _nav.scss */
+#header nav {
+  float: right;
+  margin-top: 60px;
+  letter-spacing: .1em;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 1024px) {
+    /* line 3, _nav.scss */
+    #header nav {
+      margin-right: 40px; } }
+  @media screen and (max-width: 768px) {
+    /* line 3, _nav.scss */
+    #header nav {
+      float: none;
+      display: block;
+      margin: 20px auto 0;
+      text-align: center; } }
+  /* line 22, _nav.scss */
+  #header nav a {
+    color: white; }
+    /* line 25, _nav.scss */
+    #header nav a:hover {
+      color: #fff;
+      border: none; }
+  @media screen and (max-width: 768px) {
+    /* line 31, _nav.scss */
+    #header nav ul {
+      clear: both;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: block; } }
+  /* line 41, _nav.scss */
+  #header nav ul li {
+    display: inline-block; }
+    /* line 44, _nav.scss */
+    #header nav ul li a {
+      position: relative;
+      display: block;
+      padding: 8px 8px 2px;
+      box-shadow: none;
+      font-weight: 600; }
+      /* line 51, _nav.scss */
+      #header nav ul li a:hover {
+        background: none; }
+      @media screen and (max-width: 1024px) {
+        /* line 44, _nav.scss */
+        #header nav ul li a {
+          padding: 8px 5px;
+          font-size: 14px; } }
+      @media screen and (max-width: 480px) {
+        /* line 44, _nav.scss */
+        #header nav ul li a {
+          padding: 0 8px; } }
+    @media screen and (min-width: 768px) {
+      /* line 67, _nav.scss */
+      #header nav ul li.nav-register {
+        margin-left: 10px; }
+        /* line 70, _nav.scss */
+        #header nav ul li.nav-register a {
+          position: relative;
+          padding: 8px 60px 8px 16px;
+          background: #bc4123;
+          border-radius: 3px;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }
+          /* line 77, _nav.scss */
+          #header nav ul li.nav-register a:hover {
+            background: #d64a28; }
+            /* line 80, _nav.scss */
+            #header nav ul li.nav-register a:hover span {
+              border: none; }
+          /* line 85, _nav.scss */
+          #header nav ul li.nav-register a:before {
+            position: absolute;
+            display: block;
+            content: "";
+            right: 0;
+            top: 0;
+            width: 44px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0 3px 3px 0; }
+          /* line 97, _nav.scss */
+          #header nav ul li.nav-register a:after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 44px;
+            height: 100%;
+            right: 0;
+            top: 0;
+            background: url("../images/arrow-up.svg") center center no-repeat;
+            background-size: 18px 18px;
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg); } }
+  /* line 120, _nav.scss */
+  #header nav ul .nav-speakers a:after,
+  #header nav ul .nav-venue a:after,
+  #header nav ul .nav-schedule a:after,
+  #header nav ul .nav-sponsors a:after,
+  #header nav ul .nav-Workshop a:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 34px;
+    height: 3px;
+    margin-left: -16px;
+    background: #e75a2f;
+    content: "";
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+    @media screen and (max-width: 768px) {
+      /* line 120, _nav.scss */
+      #header nav ul .nav-speakers a:after,
+      #header nav ul .nav-venue a:after,
+      #header nav ul .nav-schedule a:after,
+      #header nav ul .nav-sponsors a:after,
+      #header nav ul .nav-Workshop a:after {
+        display: none; } }
+  /* line 138, _nav.scss */
+  #header nav ul .nav-speakers a:hover:after,
+  #header nav ul .nav-speakers a:focus:after,
+  #header nav ul .nav-venue a:hover:after,
+  #header nav ul .nav-venue a:focus:after,
+  #header nav ul .nav-schedule a:hover:after,
+  #header nav ul .nav-schedule a:focus:after,
+  #header nav ul .nav-sponsors a:hover:after,
+  #header nav ul .nav-sponsors a:focus:after,
+  #header nav ul .nav-Workshop a:hover:after,
+  #header nav ul .nav-Workshop a:focus:after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); }
+
+/* line 148, _nav.scss */
+.index #header .nav-index a,
+.speakers #header .nav-speakers a,
+.schedule #header .nav-schedule a,
+.venue #header .nav-venue a,
+.Workshop #header .nav-Workshop a,
+.sponsors #header .nav-sponsors a {
+  color: rgba(255, 255, 255, 0.6); }
+  /* line 156, _nav.scss */
+  .index #header .nav-index a:after,
+  .speakers #header .nav-speakers a:after,
+  .schedule #header .nav-schedule a:after,
+  .venue #header .nav-venue a:after,
+  .Workshop #header .nav-Workshop a:after,
+  .sponsors #header .nav-sponsors a:after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); }
+
+/* line 1, _footer.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 294px;
+  margin-top: 80px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4); }
+  @media screen and (max-width: 1024px) {
+    /* line 1, _footer.scss */
+    footer {
+      height: 374px; } }
+  /* line 14, _footer.scss */
+  footer a {
+    color: #fff;
+    font-weight: 600;
+    box-shadow: none; }
+  /* line 20, _footer.scss */
+  footer .links {
+    position: relative;
+    float: left;
+    width: 100%;
+    border: 3px solid #2d3746; }
+  /* line 27, _footer.scss */
+  footer nav {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    text-transform: uppercase; }
+    /* line 33, _footer.scss */
+    footer nav a {
+      font-weight: 600;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: .1em; }
+    @media screen and (max-width: 1024px) {
+      /* line 27, _footer.scss */
+      footer nav {
+        right: 15px;
+        text-align: center; }
+        /* line 43, _footer.scss */
+        footer nav ul {
+          display: block;
+          float: none; } }
+    @media screen and (max-width: 1024px) and (max-width: 768px) {
+      /* line 43, _footer.scss */
+      footer nav ul {
+        padding-top: 12px; } }
+    @media screen and (max-width: 1024px) {
+          /* line 51, _footer.scss */
+          footer nav ul li {
+            float: none; } }
+      @media screen and (max-width: 1024px) and (max-width: 768px) {
+        /* line 51, _footer.scss */
+        footer nav ul li {
+          font-size: 14px;
+          padding: 0 3px;
+          line-height: 21px; } }
+
+  /* line 64, _footer.scss */
+  footer ul {
+    float: left; }
+    /* line 67, _footer.scss */
+    footer ul li {
+      display: inline;
+      float: left;
+      padding: 0 10px;
+      line-height: 80px;
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 16px; }
+    /* line 76, _footer.scss */
+    footer ul.other {
+      float: right;
+      margin: 20px 25px 80px 0; }
+      @media screen and (max-width: 768px) {
+        /* line 76, _footer.scss */
+        footer ul.other {
+          float: none;
+          display: block;
+          clear: both;
+          margin: 0 auto 80px;
+          text-align: center; }
+          /* line 87, _footer.scss */
+          footer ul.other li {
+            float: none;
+            display: inline; } }
+      /* line 93, _footer.scss */
+      footer ul.other li {
+        padding: 0;
+        font-size: 13px;
+        margin: 0 0 0 10px;
+        line-height: 100%; }
+        @media screen and (max-width: 768px) {
+          /* line 93, _footer.scss */
+          footer ul.other li {
+            margin: 0 5px; } }
+        /* line 103, _footer.scss */
+        footer ul.other li a {
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.8); }
+    /* line 110, _footer.scss */
+    footer ul.social {
+      position: relative;
+      float: right; }
+      @media screen and (max-width: 1024px) {
+        /* line 110, _footer.scss */
+        footer ul.social {
+          float: left;
+          clear: both;
+          width: 100%;
+          margin-top: 80px;
+          border-top: 3px solid #2d3746; } }
+      /* line 122, _footer.scss */
+      footer ul.social li {
+        display: inline-block;
+        padding: 0;
+        border-left: 3px solid #2d3746; }
+        @media screen and (max-width: 1024px) {
+          /* line 122, _footer.scss */
+          footer ul.social li {
+            width: 33.33333%; }
+            /* line 130, _footer.scss */
+            footer ul.social li:first-child {
+              border: none; } }
+        @media screen and (max-width: 768px) {
+          /* line 122, _footer.scss */
+          footer ul.social li {
+            height: 50px; } }
+        /* line 139, _footer.scss */
+        footer ul.social li a {
+          display: block;
+          width: 80px;
+          height: 80px;
+          background-position: 50% 50%;
+          background-repeat: no-repeat; }
+          @media screen and (max-width: 1024px) {
+            /* line 139, _footer.scss */
+            footer ul.social li a {
+              width: 100%; } }
+          @media screen and (max-width: 768px) {
+            /* line 139, _footer.scss */
+            footer ul.social li a {
+              height: 50px; } }
+          /* line 154, _footer.scss */
+          footer ul.social li a:hover {
+            border: none;
+            box-shadow: none; }
+          /* line 159, _footer.scss */
+          footer ul.social li a span {
+            display: none; }
+    /* line 166, _footer.scss */
+    footer ul .twitter a {
+      background-image: url("../images/twitter.svg");
+      background-size: 28px 28px; }
+    /* line 171, _footer.scss */
+    footer ul .facebook a {
+      background-image: url("../images/facebook.svg");
+      background-size: 24px 24px; }
+    /* line 176, _footer.scss */
+    footer ul .lanyrd a {
+      background-image: url("../images/lanyrd.svg");
+      background-size: 20px 20px; }
+  /* line 182, _footer.scss */
+  footer .about-organiser {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    position: relative;
+    border: 3px solid #2d3746;
+    border-width: 0 3px 3px 3px;
+    line-height: 150%; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    footer .about-organiser:last-child {
+      margin-right: 0; }
+    /* line 189, _footer.scss */
+    footer .about-organiser a {
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.8); }
+    /* line 194, _footer.scss */
+    footer .about-organiser p {
+      margin: 0;
+      padding: 25px 160px 25px 25px; }
+    /* line 199, _footer.scss */
+    footer .about-organiser .intel-logo {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      margin-top: -20px;
+      width: 40px;
+      height: 40px;
+      background: url("../images/symbol-small.svg") center center no-repeat;
+      background-size: 40px 40px;
+      opacity: .35; }
+    @media screen and (max-width: 480px) {
+      /* line 214, _footer.scss */
+      footer .about-organiser .intel-logo {
+        display: none; }
+      /* line 218, _footer.scss */
+      footer .about-organiser p {
+        padding-right: 25px; } }
+  /* line 224, _footer.scss */
+  footer .credits {
+    float: left;
+    text-align: center;
+    line-height: 100%;
+    font-size: 13px;
+    margin: 20px 0 80px 25px; }
+    @media screen and (max-width: 768px) {
+      /* line 224, _footer.scss */
+      footer .credits {
+        float: none;
+        clear: both;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0 10px; } }
+    /* line 239, _footer.scss */
+    footer .credits a {
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.8); }
+      /* line 243, _footer.scss */
+      footer .credits a:hover {
+        color: #fff; }
+
+/* line 1, _home.scss */
+body.index #main .wrapper .inner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  body.index #main .wrapper .inner:last-child {
+    margin-right: 0; }
+
+/* line 8, _home.scss */
+.index .intro {
+  margin: 200px 240px 80px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "freight-text-pro", Georgia, serif;
+  font-size: 32px;
+  line-height: 150%;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 1024px) {
+    /* line 8, _home.scss */
+    .index .intro {
+      margin: 150px 60px 80px;
+      font-size: 28px; } }
+  @media screen and (max-height: 900px) {
+    /* line 8, _home.scss */
+    .index .intro {
+      margin-top: 150px;
+      font-size: 28px; } }
+  @media screen and (max-width: 768px) {
+    /* line 8, _home.scss */
+    .index .intro {
+      font-size: 24px;
+      margin: 120px 0 0; } }
+/* line 35, _home.scss */
+.index .mark {
+  text-align: center;
+  position: relative;
+  margin-top: 340px;
+  color: #fff;
+  font-style: italic;
+  font-size: 26px;
+  font-family: "freight-text-pro", Georgia, serif;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 768px) {
+    /* line 35, _home.scss */
+    .index .mark {
+      margin-top: 140px;
+      font-size: 22px; } }
+  @media screen and (max-height: 900px) {
+    /* line 35, _home.scss */
+    .index .mark {
+      margin-top: 140px;
+      font-size: 22px; } }
+  @media screen and (max-width: 480px) {
+    /* line 35, _home.scss */
+    .index .mark {
+      margin-top: 120px;
+      font-size: 20px; } }
+  /* line 61, _home.scss */
+  .index .mark h3 {
+    padding: 150px 0 .3em;
+    font-size: 28px;
+    font-weight: 700; }
+    @media screen and (max-width: 768px) {
+      /* line 61, _home.scss */
+      .index .mark h3 {
+        padding: 44px 0 .3em;
+        font-size: 26px; } }
+    @media screen and (max-height: 900px) {
+      /* line 61, _home.scss */
+      .index .mark h3 {
+        padding: 44px 0 .3em;
+        font-size: 26px; } }
+    @media screen and (max-width: 480px) {
+      /* line 61, _home.scss */
+      .index .mark h3 {
+        padding-top: 60px;
+        font-size: 24px; } }
+  /* line 82, _home.scss */
+  .index .mark h3,
+  .index .mark p {
+    padding-left: 16px; }
+    @media screen and (max-width: 480px) {
+      /* line 82, _home.scss */
+      .index .mark h3,
+      .index .mark p {
+        padding-left: 10px; } }
+  /* line 91, _home.scss */
+  .index .mark:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 342px;
+    height: 470px;
+    top: -124px;
+    left: 50%;
+    margin-left: -164px;
+    border: 4px solid #e75a2f;
+    z-index: -1; }
+    @media screen and (max-width: 768px) {
+      /* line 91, _home.scss */
+      .index .mark:before {
+        width: 242px;
+        height: 235px;
+        margin-left: -117px;
+        border: 3px solid #e75a2f;
+        top: -60px; } }
+    @media screen and (max-height: 900px) {
+      /* line 91, _home.scss */
+      .index .mark:before {
+        width: 242px;
+        height: 235px;
+        margin-left: -117px;
+        border: 3px solid #e75a2f;
+        top: -60px; } }
+    @media screen and (max-width: 480px) {
+      /* line 91, _home.scss */
+      .index .mark:before {
+        width: 200px;
+        margin-left: -97px; } }
+  /* line 125, _home.scss */
+  .index .mark:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -340px;
+    display: block;
+    width: 680px;
+    height: 66px;
+    background-image: url("../images/word-mark%402x.png");
+    background-size: 680px 66px;
+    -webkit-animation-name: fade-in;
+    -moz-animation-name: fade-in;
+    animation-name: fade-in;
+    -webkit-animation-duration: 30s;
+    -moz-animation-duration: 30s;
+    animation-duration: 30s; }
+    @media screen and (max-width: 768px) {
+      /* line 125, _home.scss */
+      .index .mark:after {
+        width: 340px;
+        height: 33px;
+        margin-left: -170px;
+        background-image: url("../images/word-mark.png");
+        background-size: 340px 33px; } }
+    @media screen and (max-height: 900px) {
+      /* line 125, _home.scss */
+      .index .mark:after {
+        width: 340px;
+        height: 33px;
+        margin-left: -170px;
+        background-image: url("../images/word-mark.png");
+        background-size: 340px 33px; } }
+    @media screen and (max-width: 480px) {
+      /* line 125, _home.scss */
+      .index .mark:after {
+        width: 280px;
+        height: 27px;
+        margin-left: -140px;
+        background-size: 280px 27px; } }
+  /* line 163, _home.scss */
+  .index .mark h1 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 680px;
+    height: 66px;
+    background-image: url("../images/word-mark%402x.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 680px 66px;
+    text-indent: -9999em;
+    overflow: hidden;
+    -moz-mix-blend-mode: overlay;
+    -webkit-mix-blend-mode: overlay;
+    mix-blend-mode: overlay; }
+    @media screen and (max-width: 768px) {
+      /* line 163, _home.scss */
+      .index .mark h1 {
+        width: 340px;
+        height: 33px;
+        background-image: url("../images/word-mark.png");
+        background-size: 340px 33px; } }
+    @media screen and (max-height: 900px) {
+      /* line 163, _home.scss */
+      .index .mark h1 {
+        width: 340px;
+        height: 33px;
+        background-image: url("../images/word-mark.png");
+        background-size: 340px 33px; } }
+    @media screen and (max-width: 480px) {
+      /* line 163, _home.scss */
+      .index .mark h1 {
+        width: 280px;
+        height: 27px;
+        background-size: 280px 27px; } }
+/* line 201, _home.scss */
+.index .speakers {
+  text-align: center; }
+  /* line 204, _home.scss */
+  .index .speakers ul {
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+    line-height: 140%; }
+  /* line 211, _home.scss */
+  .index .speakers li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-bottom: 40px;
+    font-size: 14px; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .index .speakers li:last-child {
+      margin-right: 0; }
+    /* line 216, _home.scss */
+    .index .speakers li:nth-child(3n), .index .speakers li:nth-child(6n), .index .speakers li:nth-child(9n) {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 211, _home.scss */
+      .index .speakers li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .index .speakers li:last-child {
+          margin-right: 0; } }
+  /* line 228, _home.scss */
+  .index .speakers strong {
+    display: block;
+    margin-bottom: .3em;
+    line-height: 120%;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif; }
+  /* line 237, _home.scss */
+  .index .speakers span {
+    font-style: italic; }
+  /* line 241, _home.scss */
+  .index .speakers img {
+    display: block;
+    max-width: 86%;
+    margin: 0 auto 20px; }
+  /* line 247, _home.scss */
+  .index .speakers p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    clear: both;
+    margin-bottom: 60px; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .index .speakers p:last-child {
+      margin-right: 0; }
+/* line 257, _home.scss */
+.index .venue div {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 38.29445%;
+  margin-bottom: 60px; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .index .venue div:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 1024px) {
+    /* line 257, _home.scss */
+    .index .venue div {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      margin-bottom: 50px; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .index .venue div:last-child {
+        margin-right: 0; } }
+/* line 267, _home.scss */
+.index .venue .gallery {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 58.86297%;
+  padding-bottom: 40px; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .index .venue .gallery:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 1024px) {
+    /* line 267, _home.scss */
+    .index .venue .gallery {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      padding-bottom: 0; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .index .venue .gallery:last-child {
+        margin-right: 0; } }
+  /* line 276, _home.scss */
+  .index .venue .gallery ul {
+    margin-right: -20px; }
+  /* line 280, _home.scss */
+  .index .venue .gallery li {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    overflow: visible;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+    z-index: -1; }
+    /* line 289, _home.scss */
+    .index .venue .gallery li:first-child {
+      margin-right: -10px; }
+    /* line 293, _home.scss */
+    .index .venue .gallery li:nth-child(even) {
+      margin-top: -15px;
+      z-index: 2; }
+      /* line 297, _home.scss */
+      .index .venue .gallery li:nth-child(even) img {
+        z-index: 2; }
+    /* line 302, _home.scss */
+    .index .venue .gallery li:nth-child(3) {
+      margin-left: -10px;
+      margin-right: -10px; }
+    /* line 307, _home.scss */
+    .index .venue .gallery li img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-top: 3px solid #e75a2f; }
+/* line 317, _home.scss */
+.index .Workshop {
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 79.43148%;
+  margin-left: 10.28426%; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .index .Workshop:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 1024px) {
+    /* line 317, _home.scss */
+    .index .Workshop {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      margin-left: 0%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .index .Workshop:last-child {
+        margin-right: 0; } }
+  /* line 327, _home.scss */
+  .index .Workshop h2 {
+    text-align: center; }
+/* line 332, _home.scss */
+.index .posts {
+  float: left;
+  width: 100%;
+  margin: 20px 0 80px;
+  list-style: none; }
+  @media screen and (max-width: 768px) {
+    /* line 332, _home.scss */
+    .index .posts {
+      text-align: center;
+      margin: 20px 0; } }
+  /* line 343, _home.scss */
+  .index .posts li {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15); }
+    @media screen and (max-width: 768px) {
+      /* line 343, _home.scss */
+      .index .posts li {
+        padding-bottom: 20px; } }
+    /* line 353, _home.scss */
+    .index .posts li:last-child {
+      box-shadow: none; }
+  /* line 358, _home.scss */
+  .index .posts span,
+  .index .posts h3,
+  .index .posts .excerpt {
+    display: inline;
+    float: left;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      /* line 358, _home.scss */
+      .index .posts span,
+      .index .posts h3,
+      .index .posts .excerpt {
+        display: block;
+        float: none;
+        margin-bottom: 5px; } }
+  @media screen and (max-width: 768px) {
+    /* line 374, _home.scss */
+    .index .posts h3 {
+      padding-bottom: 20px; } }
+  /* line 379, _home.scss */
+  .index .posts span {
+    width: 12%;
+    font-size: 16px; }
+    @media screen and (max-width: 768px) {
+      /* line 379, _home.scss */
+      .index .posts span {
+        width: 100%; } }
+  /* line 388, _home.scss */
+  .index .posts .excerpt {
+    overflow: hidden;
+    width: 44%;
+    margin-left: 2%;
+    margin-bottom: 0; }
+    /* line 394, _home.scss */
+    .index .posts .excerpt p {
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      /* line 400, _home.scss */
+      .index .posts .excerpt p a {
+        padding: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 388, _home.scss */
+      .index .posts .excerpt {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 5px; } }
+  /* line 412, _home.scss */
+  .index .posts h3 {
+    width: 39%;
+    margin: 0 0 0 2%;
+    padding: 0;
+    color: #fff;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-family: "freight-text-pro", Georgia, serif;
+    font-style: italic;
+    font-size: 26px; }
+    @media screen and (max-width: 768px) {
+      /* line 412, _home.scss */
+      .index .posts h3 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 8px; } }
+  /* line 431, _home.scss */
+  .index .posts a:hover h3 em {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #e75a2f;
+    background: rgba(255, 255, 255, 0.1); }
+/* line 438, _home.scss */
+.index #countdown {
+  position: relative;
+  left: 50%;
+  z-index: 2000;
+  display: block;
+  clear: both;
+  width: 520px;
+  margin-left: -260px;
+  padding: 30px 0 25px;
+  color: #fff;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 768px) {
+    /* line 438, _home.scss */
+    .index #countdown {
+      width: 320px;
+      margin-left: -160px; } }
+  /* line 456, _home.scss */
+  .index #countdown p {
+    margin: 0; }
+  /* line 460, _home.scss */
+  .index #countdown .counter {
+    display: table;
+    margin: -24px auto 0; }
+  /* line 465, _home.scss */
+  .index #countdown .dash {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: none; }
+  /* line 472, _home.scss */
+  .index #countdown .digits {
+    padding: 0 10px;
+    text-transform: none;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 120px; }
+    @media screen and (max-width: 768px) {
+      /* line 472, _home.scss */
+      .index #countdown .digits {
+        font-size: 66px; } }
+  /* line 484, _home.scss */
+  .index #countdown .title,
+  .index #countdown .starts-in {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5); }
+
+/* line 1, _Workshop.scss */
+body.Workshop #main {
+  margin-top: 40px; }
+  @media screen and (max-width: 768px) {
+    /* line 1, _Workshop.scss */
+    body.Workshop #main {
+      margin-top: 20px; } }
+
+/* line 9, _Workshop.scss */
+.post {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15); }
+  /* line 14, _Workshop.scss */
+  .post:last-of-type {
+    box-shadow: none;
+    padding-bottom: 0; }
+  /* line 19, _Workshop.scss */
+  .post .date {
+    margin: 0;
+    text-align: center; }
+  /* line 24, _Workshop.scss */
+  .post h2 {
+    padding: 0 0 40px;
+    text-transform: none;
+    text-align: center;
+    letter-spacing: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 120%; }
+    @media screen and (max-width: 480px) {
+      /* line 24, _Workshop.scss */
+      .post h2 {
+        font-size: 30px; } }
+    /* line 37, _Workshop.scss */
+    .post h2 a {
+      box-shadow: none;
+      font-weight: 900; }
+      /* line 41, _Workshop.scss */
+      .post h2 a:hover {
+        box-shadow: 0 2px 0 #e75a2f; }
+  /* line 47, _Workshop.scss */
+  .post strong {
+    font-weight: 600; }
+  /* line 51, _Workshop.scss */
+  .post em {
+    font-style: italic; }
+  /* line 55, _Workshop.scss */
+  .post ul, .post ol {
+    list-style: disc inside;
+    margin: 0 0 1em; }
+  /* line 60, _Workshop.scss */
+  .post img {
+    margin: 1em 0 1.5em;
+    max-width: 100%;
+    height: auto; }
+    /* line 65, _Workshop.scss */
+    .post img.right {
+      float: right;
+      margin-left: 30px; }
+    /* line 70, _Workshop.scss */
+    .post img.left {
+      float: left;
+      margin-right: 30px; }
+
+/* line 1, _speakers.scss */
+body.speakers #main {
+  margin-top: 40px; }
+  @media screen and (max-width: 768px) {
+    /* line 1, _speakers.scss */
+    body.speakers #main {
+      margin-top: 20px; } }
+
+/* line 9, _speakers.scss */
+#main .speakers {
+  margin-top: 80px; }
+
+/* line 13, _speakers.scss */
+.speaker {
+  float: left;
+  width: 100%;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15); }
+  /* line 20, _speakers.scss */
+  .speaker:last-of-type {
+    box-shadow: none;
+    padding-bottom: 0; }
+  /* line 25, _speakers.scss */
+  .speaker .who {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 28.01019%;
+    margin-bottom: 2em; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .speaker .who:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 25, _speakers.scss */
+      .speaker .who {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        text-align: center; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .speaker .who:last-child {
+          margin-right: 0; }
+        /* line 33, _speakers.scss */
+        .speaker .who img {
+          max-width: 200px; } }
+    /* line 38, _speakers.scss */
+    .speaker .who h3 {
+      margin-bottom: 0;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 120%; }
+    /* line 45, _speakers.scss */
+    .speaker .who .affiliation {
+      margin: -12px 0 1em;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: .1em;
+      color: rgba(255, 255, 255, 0.5); }
+    /* line 53, _speakers.scss */
+    .speaker .who p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 170%; }
+  /* line 60, _speakers.scss */
+  .speaker .biography, .speaker .topic {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 69.14722%;
+    margin-right: 0; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .speaker .biography:last-child, .speaker .topic:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 60, _speakers.scss */
+      .speaker .biography, .speaker .topic {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .speaker .biography:last-child, .speaker .topic:last-child {
+          margin-right: 0; } }
+  /* line 69, _speakers.scss */
+  .speaker .biography {
+    margin-bottom: 1em;
+    font-family: "freight-text-pro", Georgia, serif;
+    font-style: italic;
+    font-size: 20px; }
+  /* line 78, _speakers.scss */
+  .speaker .topic span {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .2em; }
+  /* line 84, _speakers.scss */
+  .speaker .topic h3 {
+    padding-top: 0; }
+  /* line 89, _speakers.scss */
+  .speaker img {
+    max-width: 150px;
+    margin-bottom: 1em;
+    border-top: 3px solid #e75a2f;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9); }
+
+/* line 97, _speakers.scss */
+.speakers-list {
+  width: 100%;
+  float: left;
+  padding-bottom: 60px;
+  line-height: 140%;
+  text-align: center; }
+  /* line 104, _speakers.scss */
+  .speakers-list li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-bottom: 40px;
+    font-size: 14px; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .speakers-list li:last-child {
+      margin-right: 0; }
+    /* line 109, _speakers.scss */
+    .speakers-list li:nth-child(3n), .speakers-list li:nth-child(6n), .speakers-list li:nth-child(9n) {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 104, _speakers.scss */
+      .speakers-list li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .speakers-list li:last-child {
+          margin-right: 0; } }
+  /* line 121, _speakers.scss */
+  .speakers-list strong {
+    display: block;
+    margin-bottom: .3em;
+    line-height: 120%;
+    font-weight: 600;
+    font-size: 16px; }
+  /* line 129, _speakers.scss */
+  .speakers-list span {
+    font-style: italic; }
+  /* line 133, _speakers.scss */
+  .speakers-list img {
+    display: block;
+    max-width: 86%;
+    margin: 0 auto 20px; }
+
+/* line 1, _register.scss */
+body.register #main {
+  margin-top: 40px; }
+  @media screen and (max-width: 768px) {
+    /* line 1, _register.scss */
+    body.register #main {
+      margin-top: 20px; } }
+
+/* line 9, _register.scss */
+.registration-info {
+  margin-bottom: 30px;
+  padding-bottom: 40px; }
+  /* line 15, _register.scss */
+  .registration-info abbr a {
+    padding: 0 2px;
+    color: #e75a2f;
+    font-style: normal;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased; }
+  /* line 23, _register.scss */
+  .registration-info abbr sup {
+    position: relative;
+    top: -0.4em; }
+  /* line 29, _register.scss */
+  .registration-info .what-you-get {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 28.01019%; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .registration-info .what-you-get:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 29, _register.scss */
+      .registration-info .what-you-get {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .registration-info .what-you-get:last-child {
+          margin-right: 0; }
+        /* line 35, _register.scss */
+        .registration-info .what-you-get .register-now {
+          display: block;
+          margin: 30px auto 50px;
+          text-align: center; } }
+    /* line 42, _register.scss */
+    .registration-info .what-you-get .all-inclusive {
+      width: 200px;
+      height: 200px;
+      margin: 30px 0 2em 0;
+      border: 3px solid #2d3746;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        /* line 42, _register.scss */
+        .registration-info .what-you-get .all-inclusive {
+          width: 160px;
+          height: 160px;
+          display: block;
+          margin: 30px auto; } }
+      /* line 58, _register.scss */
+      .registration-info .what-you-get .all-inclusive strong {
+        display: block;
+        padding: 28px 20px 16px;
+        color: #e75a2f;
+        font-weight: 600;
+        font-size: 36px;
+        font-style: italic;
+        font-family: "freight-display-pro", Georgia, serif; }
+        @media screen and (max-width: 768px) {
+          /* line 58, _register.scss */
+          .registration-info .what-you-get .all-inclusive strong {
+            padding: 26px 10px 8px;
+            font-size: 30px; } }
+      /* line 73, _register.scss */
+      .registration-info .what-you-get .all-inclusive span {
+        display: block;
+        padding: 0 20px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 14px;
+        line-height: 150%; }
+        @media screen and (max-width: 768px) {
+          /* line 73, _register.scss */
+          .registration-info .what-you-get .all-inclusive span {
+            font-size: 11px; } }
+  /* line 88, _register.scss */
+  .registration-info .tickets {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 58.86297%;
+    margin-left: 10.28426%;
+    margin-right: 0;
+    float: right;
+    list-style: none; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .registration-info .tickets:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 88, _register.scss */
+      .registration-info .tickets {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        margin-left: 0%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .registration-info .tickets:last-child {
+          margin-right: 0; } }
+    /* line 100, _register.scss */
+    .registration-info .tickets li {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 100%;
+      position: relative;
+      display: inline-block;
+      margin: 0 0 30px;
+      padding-bottom: 20px;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+      text-align: center; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .registration-info .tickets li:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 100, _register.scss */
+        .registration-info .tickets li {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 100%; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .registration-info .tickets li:last-child {
+            margin-right: 0; } }
+      /* line 114, _register.scss */
+      .registration-info .tickets li:last-child {
+        box-shadow: none; }
+      /* line 118, _register.scss */
+      .registration-info .tickets li .kind {
+        margin: 0 0 5px;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-weight: 400;
+        font-size: 13px; }
+      /* line 126, _register.scss */
+      .registration-info .tickets li .double-room,
+      .registration-info .tickets li .single-room {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 47.58542%;
+        display: inline-block;
+        padding: 10px 0 5px 0;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 13px; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .registration-info .tickets li .double-room:last-child,
+        .registration-info .tickets li .single-room:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          /* line 126, _register.scss */
+          .registration-info .tickets li .double-room,
+          .registration-info .tickets li .single-room {
+            float: left;
+            display: block;
+            margin-right: 2.84259%;
+            width: 100%; }
+            /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+            .registration-info .tickets li .double-room:last-child,
+            .registration-info .tickets li .single-room:last-child {
+              margin-right: 0; } }
+      /* line 140, _register.scss */
+      .registration-info .tickets li .single-room {
+        margin-right: 0; }
+    /* line 145, _register.scss */
+    .registration-info .tickets a {
+      border: none;
+      background: none;
+      box-shadow: none;
+      color: #fff; }
+    /* line 152, _register.scss */
+    .registration-info .tickets abbr {
+      vertical-align: super; }
+      /* line 155, _register.scss */
+      .registration-info .tickets abbr a {
+        padding: 0 2px;
+        color: #e75a2f;
+        font-style: normal;
+        font-weight: 900;
+        border: none;
+        box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2); }
+        /* line 163, _register.scss */
+        .registration-info .tickets abbr a:hover, .registration-info .tickets abbr a:focus {
+          border: none;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 2px 0 #e75a2f; }
+    /* line 171, _register.scss */
+    .registration-info .tickets span {
+      display: block;
+      margin: 10px 0 -8px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased; }
+      @media screen and (max-width: 768px) {
+        /* line 171, _register.scss */
+        .registration-info .tickets span {
+          margin-top: 0; } }
+    /* line 186, _register.scss */
+    .registration-info .tickets .double-room span {
+      margin-right: -14px; }
+    /* line 190, _register.scss */
+    .registration-info .tickets strong {
+      padding: 20px 12px;
+      color: #fff;
+      text-transform: none;
+      font-weight: 600;
+      font-size: 72px;
+      font-style: normal;
+      font-family: "freight-sans-pro", Georgia, sans-serif;
+      -webkit-font-smoothing: antialiased; }
+      @media screen and (max-width: 1024px) {
+        /* line 190, _register.scss */
+        .registration-info .tickets strong {
+          font-size: 43px; } }
+      /* line 204, _register.scss */
+      .registration-info .tickets strong em {
+        margin-right: 6px;
+        vertical-align: top;
+        font-weight: 300;
+        font-size: 32px; }
+    /* line 212, _register.scss */
+    .registration-info .tickets em {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6); }
+      @media screen and (max-width: 480px) {
+        /* line 212, _register.scss */
+        .registration-info .tickets em {
+          font-size: 11px; } }
+    /* line 221, _register.scss */
+    .registration-info .tickets .sold-out,
+    .registration-info .tickets .expired {
+      -webkit-transform: rotate(15deg);
+      -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+      -o-transform: rotate(15deg);
+      transform: rotate(15deg);
+      position: absolute;
+      top: 0;
+      right: 17px;
+      z-index: 100;
+      padding: 10px 15px;
+      border: 2px solid #e75a2f;
+      border-radius: 6px;
+      color: #e75a2f;
+      text-align: center;
+      font-size: 16px;
+      font-family: "Monaco", "Courier", mono;
+      line-height: 130%; }
+      @media screen and (max-width: 768px) {
+        /* line 221, _register.scss */
+        .registration-info .tickets .sold-out,
+        .registration-info .tickets .expired {
+          -webkit-transform: rotate(10deg);
+          -moz-transform: rotate(10deg);
+          -ms-transform: rotate(10deg);
+          -o-transform: rotate(10deg);
+          transform: rotate(10deg);
+          top: 160px;
+          right: 0; } }
+      @media screen and (max-width: 480px) {
+        /* line 221, _register.scss */
+        .registration-info .tickets .sold-out,
+        .registration-info .tickets .expired {
+          right: 40px;
+          top: 160px; } }
+    /* line 249, _register.scss */
+    .registration-info .tickets .sold-out {
+      -webkit-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+      top: 6px;
+      right: auto;
+      left: 17px; }
+      @media screen and (max-width: 768px) {
+        /* line 249, _register.scss */
+        .registration-info .tickets .sold-out {
+          -webkit-transform: rotate(-10deg);
+          -moz-transform: rotate(-10deg);
+          -ms-transform: rotate(-10deg);
+          -o-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+          top: 40px;
+          left: 0; } }
+      @media screen and (max-width: 480px) {
+        /* line 249, _register.scss */
+        .registration-info .tickets .sold-out {
+          top: 20px;
+          left: 40px; } }
+  /* line 268, _register.scss */
+  .registration-info .included {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 100%;
+    margin: 20px 0 40px;
+    padding-bottom: 30px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+    line-height: 130%; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .registration-info .included:last-child {
+      margin-right: 0; }
+    /* line 275, _register.scss */
+    .registration-info .included > li {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 28.01019%;
+      padding: 100px 0 10px 0;
+      font-size: 16px; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .registration-info .included > li:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 275, _register.scss */
+        .registration-info .included > li {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 100%;
+          margin-bottom: 20px;
+          text-align: center; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .registration-info .included > li:last-child {
+            margin-right: 0; } }
+      /* line 286, _register.scss */
+      .registration-info .included > li:last-child {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 38.29445%;
+        margin-right: 0; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .registration-info .included > li:last-child:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          /* line 286, _register.scss */
+          .registration-info .included > li:last-child {
+            float: left;
+            display: block;
+            margin-right: 2.84259%;
+            width: 100%; }
+            /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+            .registration-info .included > li:last-child:last-child {
+              margin-right: 0; } }
+      /* line 295, _register.scss */
+      .registration-info .included > li.presentations {
+        background: url("../images/slideshow.svg") center top no-repeat;
+        background-size: 82px 82px; }
+      /* line 300, _register.scss */
+      .registration-info .included > li.lodging {
+        background: url("../images/home.svg") center top no-repeat;
+        background-size: 82px 82px; }
+      /* line 305, _register.scss */
+      .registration-info .included > li.meals {
+        background: url("../images/food.svg") center top no-repeat;
+        background-size: 82px 82px; }
+      /* line 310, _register.scss */
+      .registration-info .included > li h3 {
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          /* line 310, _register.scss */
+          .registration-info .included > li h3 {
+            font-size: 22px; } }
+      /* line 318, _register.scss */
+      .registration-info .included > li ul li,
+      .registration-info .included > li ul li:first-child {
+        margin: 0 0 0 20px;
+        padding: 5px 0;
+        list-style: disc; }
+        @media screen and (max-width: 768px) {
+          /* line 318, _register.scss */
+          .registration-info .included > li ul li,
+          .registration-info .included > li ul li:first-child {
+            list-style: none;
+            margin-left: 0; } }
+  /* line 332, _register.scss */
+  .registration-info .extra-tickets {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 100%;
+    margin-bottom: 2em; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .registration-info .extra-tickets:last-child {
+      margin-right: 0; }
+    /* line 336, _register.scss */
+    .registration-info .extra-tickets > p {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 69.14722%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .registration-info .extra-tickets > p:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 336, _register.scss */
+        .registration-info .extra-tickets > p {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 100%;
+          margin-bottom: 2em; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .registration-info .extra-tickets > p:last-child {
+            margin-right: 0; } }
+    /* line 345, _register.scss */
+    .registration-info .extra-tickets .tickets {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 28.01019%;
+      margin-right: 0;
+      margin-left: 0%;
+      margin-bottom: 0;
+      margin-top: -20px; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .registration-info .extra-tickets .tickets:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 345, _register.scss */
+        .registration-info .extra-tickets .tickets {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 100%; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .registration-info .extra-tickets .tickets:last-child {
+            margin-right: 0; } }
+      /* line 356, _register.scss */
+      .registration-info .extra-tickets .tickets li {
+        margin-bottom: 15px; }
+      /* line 360, _register.scss */
+      .registration-info .extra-tickets .tickets .kind {
+        margin: 0; }
+      /* line 364, _register.scss */
+      .registration-info .extra-tickets .tickets .single-room {
+        float: none;
+        width: auto;
+        padding: 0;
+        text-align: center; }
+        /* line 370, _register.scss */
+        .registration-info .extra-tickets .tickets .single-room strong {
+          display: block;
+          padding: 5px 0 30px; }
+  /* line 378, _register.scss */
+  .registration-info .footnote {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 100%;
+    padding: 20px 0 0;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.15);
+    font-style: italic;
+    line-height: 150%;
+    font-size: 16px; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .registration-info .footnote:last-child {
+      margin-right: 0; }
+    /* line 386, _register.scss */
+    .registration-info .footnote p {
+      margin: 0 0 -20px; }
+      /* line 389, _register.scss */
+      .registration-info .footnote p:last-of-type {
+        margin: 0 0 1em; }
+    /* line 394, _register.scss */
+    .registration-info .footnote h3 {
+      margin: 30px 0 0;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 16px;
+      font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased; }
+      /* line 404, _register.scss */
+      .registration-info .footnote h3 abbr {
+        color: #e75a2f;
+        font-size: 22px; }
+
+/* line 412, _register.scss */
+.tickets .early-bird .single-room, .tickets .early-bird .double-room {
+  opacity: .4; }
+
+/* line 1, _schedule.scss */
+body.schedule #main {
+  margin-top: 40px; }
+  @media screen and (max-width: 768px) {
+    /* line 1, _schedule.scss */
+    body.schedule #main {
+      margin-top: 20px; } }
+
+/* line 9, _schedule.scss */
+.nav-sub-schedule {
+  display: table;
+  margin: 0 auto 1em;
+  padding-top: 2em;
+  text-align: center;
+  border-radius: 3px; }
+  /* line 16, _schedule.scss */
+  .nav-sub-schedule li {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #4e5c6b;
+    border-width: 2px 0 2px 2px;
+    letter-spacing: .1em;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased; }
+    /* line 27, _schedule.scss */
+    .nav-sub-schedule li:first-child {
+      border-radius: 3px 0 0 3px; }
+    /* line 31, _schedule.scss */
+    .nav-sub-schedule li:last-child {
+      border-width: 2px;
+      border-radius: 0 3px 3px 0; }
+    @media screen and (max-width: 480px) {
+      /* line 16, _schedule.scss */
+      .nav-sub-schedule li {
+        font-size: 13px; } }
+    /* line 40, _schedule.scss */
+    .nav-sub-schedule li a {
+      display: block;
+      padding: 0 16px;
+      font-weight: 600;
+      box-shadow: none; }
+
+/* line 49, _schedule.scss */
+.full-schedule {
+  margin-bottom: 80px; }
+  /* line 52, _schedule.scss */
+  .full-schedule .day-heading {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 89.71574%;
+    margin-left: 10.28426%; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .full-schedule .day-heading:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 52, _schedule.scss */
+      .full-schedule .day-heading {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 79.43148%;
+        margin-left: 20.56852%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .full-schedule .day-heading:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      /* line 52, _schedule.scss */
+      .full-schedule .day-heading {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        margin-left: 0%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .full-schedule .day-heading:last-child {
+          margin-right: 0; } }
+    /* line 66, _schedule.scss */
+    .full-schedule .day-heading h3 {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    /* line 71, _schedule.scss */
+    .full-schedule .day-heading h4 {
+      padding-bottom: 1em;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: rgba(255, 255, 255, 0.3);
+      font-style: normal;
+      font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+  /* line 82, _schedule.scss */
+  .full-schedule hr {
+    clear: both;
+    width: 100px;
+    height: 0;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+    border: none;
+    text-align: center; }
+    @media screen and (max-width: 480px) {
+      /* line 82, _schedule.scss */
+      .full-schedule hr {
+        padding: 0 0 40px; } }
+    /* line 95, _schedule.scss */
+    .full-schedule hr:after {
+      display: block;
+      width: 80px;
+      margin: 0 auto;
+      border-bottom: 3px solid #e75a2f;
+      content: ""; }
+  /* line 104, _schedule.scss */
+  .full-schedule .day {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 100%;
+    padding-bottom: 2em; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .full-schedule .day:last-child {
+      margin-right: 0; }
+    /* line 108, _schedule.scss */
+    .full-schedule .day .vevent, .full-schedule .day .break {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      padding-top: 1em;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15); }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .vevent:last-child, .full-schedule .day .break:last-child {
+        margin-right: 0; }
+      /* line 113, _schedule.scss */
+      .full-schedule .day .vevent:last-of-type, .full-schedule .day .break:last-of-type {
+        box-shadow: none; }
+    /* line 118, _schedule.scss */
+    .full-schedule .day .break {
+      background: url("../images/bg-diagonal-stripes.png") 0 2px repeat-x;
+      color: #fff;
+      font-family: "freight-display-pro", Georgia, serif;
+      text-align: center;
+      font-style: italic; }
+    /* line 126, _schedule.scss */
+    .full-schedule .day .time {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 7.44167%;
+      margin-top: 4px;
+      margin-bottom: 1em;
+      font-size: 18px;
+      line-height: 120%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .time:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 126, _schedule.scss */
+        .full-schedule .day .time {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 17.72593%;
+          margin-top: 5px; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .time:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        /* line 126, _schedule.scss */
+        .full-schedule .day .time {
+          font-size: 11px; } }
+    /* line 143, _schedule.scss */
+    .full-schedule .day .summary {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 89.71574%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .summary:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 143, _schedule.scss */
+        .full-schedule .day .summary {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 79.43148%;
+          margin-right: 0; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .summary:last-child {
+            margin-right: 0; } }
+      /* line 151, _schedule.scss */
+      .full-schedule .day .summary h3 {
+        padding: 0 0 .3em;
+        font-size: 30px; }
+      /* line 156, _schedule.scss */
+      .full-schedule .day .summary .description {
+        line-height: 140%; }
+    /* line 161, _schedule.scss */
+    .full-schedule .day .person {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 17.72593%;
+      margin-right: 0;
+      text-align: right; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .person:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 161, _schedule.scss */
+        .full-schedule .day .person {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 79.43148%;
+          margin-left: 20.56852%;
+          text-align: left;
+          padding-bottom: 30px; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .person:last-child {
+            margin-right: 0; } }
+      /* line 173, _schedule.scss */
+      .full-schedule .day .person h3 {
+        padding: 0 0 .3em;
+        font-size: 28px; }
+      /* line 178, _schedule.scss */
+      .full-schedule .day .person a {
+        font-size: 17px; }
+      /* line 182, _schedule.scss */
+      .full-schedule .day .person img {
+        max-width: 50px;
+        margin-bottom: .5em;
+        border-top: 3px solid #e75a2f;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9); }
+      /* line 189, _schedule.scss */
+      .full-schedule .day .person .affiliation {
+        display: block;
+        margin: .2em 0 1em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%; }
+    /* line 200, _schedule.scss */
+    .full-schedule .day .photo {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 28.01019%;
+      margin-right: 0; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .photo:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        /* line 200, _schedule.scss */
+        .full-schedule .day .photo {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 100%;
+          margin-right: 0; }
+          /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .photo:last-child {
+            margin-right: 0; } }
+      /* line 209, _schedule.scss */
+      .full-schedule .day .photo img {
+        float: right;
+        margin: 0 0 1em;
+        width: 80px;
+        height: 80px; }
+        @media screen and (max-width: 480px) {
+          /* line 209, _schedule.scss */
+          .full-schedule .day .photo img {
+            float: none;
+            display: block;
+            margin: 0 auto 1em;
+            width: 120px;
+            height: 120px; } }
+
+/* line 1, _venue.scss */
+body.venue #main {
+  margin-top: 40px; }
+  @media screen and (max-width: 768px) {
+    /* line 1, _venue.scss */
+    body.venue #main {
+      margin-top: 20px; } }
+
+/* line 9, _venue.scss */
+.Kuttippuram {
+  margin-bottom: 60px; }
+
+/* line 13, _venue.scss */
+.yasuragi-images {
+  float: left;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  background: url("../images/venue-small.png") center center no-repeat;
+  background-size: 2000px 200px; }
+
+/* line 22, _venue.scss */
+.map {
+  float: left;
+  width: 100%;
+  margin: 40px 0 0; }
+  /* line 27, _venue.scss */
+  .map #map-canvas {
+    float: left;
+    width: 100%;
+    height: 340px; }
+
+/* line 34, _venue.scss */
+.addresses {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 160%; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .addresses:last-child {
+    margin-right: 0; }
+  /* line 41, _venue.scss */
+  .addresses strong {
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff; }
+  /* line 47, _venue.scss */
+  .addresses li {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 48.57871%;
+    padding: 0 0 20px 94px;
+    background: url("../images/marker-images/image.png") left 0 no-repeat;
+    background-size: 80px 84px; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .addresses li:last-child {
+      margin-right: 0; }
+    /* line 53, _venue.scss */
+    .addresses li.yasuragi {
+      background-image: url("../images/marker-images/image2.png"); }
+    @media screen and (max-width: 768px) {
+      /* line 47, _venue.scss */
+      .addresses li {
+        padding-left: 60px;
+        font-size: 14px;
+        line-height: 160%;
+        background-size: 40px 42px; } }
+    @media screen and (max-width: 480px) {
+      /* line 47, _venue.scss */
+      .addresses li {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 83px;
+        font-size: 16px;
+        background-size: 59px 63px; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .addresses li:last-child {
+          margin-right: 0; } }
+
+/* line 1, _sponsors.scss */
+body.sponsors #main .inner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  body.sponsors #main .inner:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 1, _sponsors.scss */
+    body.sponsors #main .inner {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      body.sponsors #main .inner:last-child {
+        margin-right: 0; } }
+
+/* line 11, _sponsors.scss */
+body.sponsors #main {
+  margin-top: 40px; }
+  @media screen and (max-width: 768px) {
+    /* line 11, _sponsors.scss */
+    body.sponsors #main {
+      margin-top: 20px; } }
+
+/* line 19, _sponsors.scss */
+.our-sponsors {
+  margin-top: 80px;
+  text-align: center;
+  border-top: 3px solid #2d3746; }
+  /* line 24, _sponsors.scss */
+  .our-sponsors div {
+    margin: 0 0 60px; }
+  /* line 28, _sponsors.scss */
+  .our-sponsors div:not(.supporters) a {
+    box-shadow: none;
+    background: none; }
+  /* line 33, _sponsors.scss */
+  .our-sponsors h4 {
+    margin: 3em 0 1em;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: rgba(255, 255, 255, 0.3);
+    font-style: normal;
+    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+  /* line 43, _sponsors.scss */
+  .our-sponsors img {
+    width: 100%;
+    height: auto;
+    margin: 15px 20px; }
+    @media screen and (max-width: 480px) {
+      /* line 43, _sponsors.scss */
+      .our-sponsors img {
+        margin: 15px 0; } }
+  /* line 53, _sponsors.scss */
+  .our-sponsors .read-more {
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.3); }
+    /* line 59, _sponsors.scss */
+    .our-sponsors .read-more a {
+      color: rgba(255, 255, 255, 0.6); }
+  /* line 64, _sponsors.scss */
+  .our-sponsors .supporters {
+    line-height: 200%; }
+    /* line 67, _sponsors.scss */
+    .our-sponsors .supporters a {
+      margin: 0 10px;
+      white-space: nowrap; }
+
+/* line 76, _sponsors.scss */
+.sponsors .center {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 79.43148%;
+  margin-left: 10.28426%;
+  text-align: left;
+  margin-bottom: 1em; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .sponsors .center:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 76, _sponsors.scss */
+    .sponsors .center {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      margin-left: 0%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .sponsors .center:last-child {
+        margin-right: 0; } }
+  /* line 87, _sponsors.scss */
+  .sponsors .center.last {
+    margin-bottom: 60px; }
+/* line 92, _sponsors.scss */
+.sponsors .become-sponsor {
+  margin-bottom: 60px; }
+/* line 96, _sponsors.scss */
+.sponsors .our-sponsors {
+  display: none; }
+/* line 100, _sponsors.scss */
+.sponsors h4 {
+  clear: both;
+  display: block;
+  margin: 0 0 3em;
+  padding: 4em 0 1em;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-style: normal;
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+/* line 113, _sponsors.scss */
+.sponsors .sponsor {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 100%;
+  padding-bottom: 20px; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .sponsors .sponsor:last-child {
+    margin-right: 0; }
+  /* line 117, _sponsors.scss */
+  .sponsors .sponsor .logo {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 28.01019%;
+    padding-bottom: 30px; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .sponsors .sponsor .logo:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 117, _sponsors.scss */
+      .sponsors .sponsor .logo {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .sponsors .sponsor .logo:last-child {
+          margin-right: 0; }
+        /* line 124, _sponsors.scss */
+        .sponsors .sponsor .logo img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto; } }
+    /* line 131, _sponsors.scss */
+    .sponsors .sponsor .logo a {
+      box-shadow: none;
+      background: none; }
+  /* line 137, _sponsors.scss */
+  .sponsors .sponsor .description {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 58.86297%;
+    margin-left: 10.28426%;
+    padding-bottom: 30px;
+    font-size: 17px;
+    line-height: 150%; }
+    /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .sponsors .sponsor .description:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 137, _sponsors.scss */
+      .sponsors .sponsor .description {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        margin-left: 0%; }
+        /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+        .sponsors .sponsor .description:last-child {
+          margin-right: 0; } }
+  /* line 150, _sponsors.scss */
+  .sponsors .sponsor h3 {
+    font-size: 32px; }
+  /* line 154, _sponsors.scss */
+  .sponsors .sponsor img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+  /* line 160, _sponsors.scss */
+  .sponsors .sponsor h3 a {
+    font-weight: inherit;
+    box-shadow: none; }
+/* line 168, _sponsors.scss */
+.sponsors .supporters ul {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 58.86297%;
+  margin-left: 41.13703%;
+  padding-bottom: 80px; }
+  /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .sponsors .supporters ul:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 168, _sponsors.scss */
+    .sponsors .supporters ul {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      margin-left: 0%; }
+      /* line 89, ../../../../.rvm/gems/ruby-2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      .sponsors .supporters ul:last-child {
+        margin-right: 0; } }
+  /* line 178, _sponsors.scss */
+  .sponsors .supporters ul li {
+    margin-bottom: .5em; }
+
+/* line 185, _sponsors.scss */
+.wordpress img,
+.thunderbolt img {
+  max-width: 340px; }
+
+/* line 190, _sponsors.scss */
+.mailchimp img {
+  max-width: 270px; }
+
+/* line 194, _sponsors.scss */
+.github img {
+  max-width: 180px; }
+
+/* line 198, _sponsors.scss */
+.soundcloud img {
+  max-width: 180px; }
+
+/* line 202, _sponsors.scss */
+.gospotcheck img {
+  max-width: 225px; }
+
+/* line 206, _sponsors.scss */
+.intel img {
+  max-width: 240px; }
